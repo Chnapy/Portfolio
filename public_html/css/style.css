@@ -1,0 +1,297 @@
+
+*:not(.diagram):not(.diag) {
+	border-radius: 0px !important;
+}
+
+body {
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.diagram {
+	display: inline-block;
+}
+
+.contDiag {
+	text-align: center;
+}
+
+.label-default {
+	color: white;
+	background: none;
+	border: 1px solid white;
+}
+
+header {
+	position: relative;
+	background: black;
+	z-index: -1;
+	height: 512px;
+}
+
+#myCarousel {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 0.80;
+	height: 100%;
+}
+
+#myCarousel .carousel-inner img {
+	height: 100%;
+	width: auto;
+	max-width: none;
+}
+
+.star-primary::after, .star-light::after {
+	content: none !important;
+}
+
+#programmation {
+	background: #34495E;
+	color: white;
+}
+
+#programmation .label-title {
+	font-size: 2em;
+}
+
+#programmation .progress {
+	margin-bottom: 5px;
+	background: #2c3e50;
+}
+
+#programmation .label:not(.label-title) {
+	background: #2c3e50;
+	letter-spacing: 0.5px;
+	font-weight: normal;
+}
+
+.langage {
+	margin-bottom: 1em;
+}
+
+.langage .row .col-sm-12 {
+	margin-top: 30px;
+}
+
+#diplomes {
+	background: #e74c3c;
+	color: white;
+}
+
+#diplomes .events {
+	background: #c0392b;
+}
+
+#diplomes dt {
+	background-color: #c0392b;
+}
+
+#diplomes .circ {
+	background-color: white;
+	border-color: #c0392b;
+}
+
+#diplomes .time {
+	color: white;
+}
+
+#diplomes .timeline dl::before {
+	background-color: #c0392b;
+}
+
+#diplomes .timeline dl dd.pos-left .events::before {
+	border-color: transparent transparent transparent #c0392b;
+}
+
+#diplomes .timeline dl dd.pos-right .events::before {
+	border-color: transparent #c0392b transparent transparent;
+}
+
+#diplomes .label-default {
+	padding-bottom: 0.2em;
+	font-size: 71%;
+}
+
+#diplomes a {
+	color: #4BBFFA;
+}
+
+#projets {
+	background: #3498db;
+	color: white;
+}
+
+#projets .jumbotron, #projets .thumbnail {
+	background: #2980b9;
+}
+
+#projets .jumbotron .jumbotron-contents, #projets .thumbnail .caption {
+	color: white;
+}
+
+.jumbotron .image-sous-titre {
+	text-align: center;
+	font-style: italic;
+}
+
+#projets .jumbotron h1 {
+	padding-top: 15px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+#projets .jumbotron h2 {
+	text-transform: none;
+}
+
+#projets .links {
+	margin-bottom: 15px;
+}
+
+#projets .links img {
+	width: 32px;
+	height: auto;
+	margin-right: 5px;
+}
+
+#projets .langages_used .label {
+	margin-right: 5px;
+	border-width: 1px;
+	letter-spacing: 0.5px;
+}
+
+#projets .thumbnail a img {
+	display: inline;
+}
+
+#projets .thumbnail p {
+	font-size: 14px;
+}
+
+.image-large {
+	cursor: pointer;
+}
+
+#imagemodal .modal-dialog {
+	max-width: 98%;
+	max-height: 50%;
+}
+
+#imagemodal .modal-content, #imagepreview {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#contact {
+	background: #1abc9c;
+	color: white;
+	padding-bottom: 120px;
+}
+
+#contact .btn {
+	border: 2px dashed #16a085;
+	background: none;
+	margin-top: 10px;
+}
+
+#contact .btn:hover {
+	border-style: solid;
+}
+
+#contact .btn:focus {
+	background: #16a085;
+}
+
+#contact a.btn:first-child {
+	margin-top: 25px;
+	margin-bottom: 10px;
+}
+
+#contact .form-control {
+	margin-bottom: 10px;
+	background: #16a085;
+	border: 1px solid transparent;
+	color: white;
+}
+
+#contact label {
+	display: block;
+	text-align: left;
+}
+
+#contact textarea::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:rgba(255,255,255,0.5);
+}
+#contact textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:white;
+	opacity:0.5;
+}
+#contact textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:white;
+	opacity:  0.5;
+}
+#contact textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:rgba(255,255,255,0.5);
+}
+
+footer {
+	background-color: #1abc9c;
+	background-image: url("../img/footer.png");
+	width: 100%;
+	height: 281px;
+	text-align:center;
+	padding-top: 125px;
+}
+
+footer #footext {
+	display: inline-block;
+	color: white;
+	border: 1px solid white;
+	padding: 0.3em;
+	font-size: 1.5em;
+	background: rgba(0, 0, 0, 0.2);
+	font-weight: bold;
+}
+
+#menu {
+	position: fixed;
+	padding: 0px;
+	left: 5px;
+	top: 5px;
+}
+
+#menu .btn {
+	margin-bottom: 10px;
+	border: 2px solid;
+}
+
+#menu .btn[href="#myCarousel"] {
+	background: transparent;
+	border-color: white !important;
+}
+
+#menu .btn[href="#programmation"] {
+	background: #34495E;
+	border-color: #2C3E50 !important;
+}
+
+#menu .btn[href="#diplomes"] {
+	background: #E74C3C;
+	border-color: #C0392B !important;
+}
+
+#menu .btn[href="#projets"] {
+	background: #3498DB;
+	border-color: #2980B9 !important;
+}
+
+#menu .btn[href="#contact"] {
+	background: #1ABC9C;
+	border-color: #16A085 !important;
+}
