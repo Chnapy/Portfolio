@@ -113,6 +113,10 @@ body {
 
 @mixin wout-prefix($key, $value) {
 	-webkit-#{$key}: $value;
+	-moz-#{$key}: $value;
+	-o-#{$key}: $value;
+	-ms-#{$key}: $value;
+	#{$key}: $value;
 }
 
 header {
@@ -346,7 +350,6 @@ header {
 		right: 0;
 		height: 100%;
 		overflow: hidden;
-		/*transition: 0.4s;*/
 
 		#bg_video {
 			width: 100% !important;
@@ -367,11 +370,9 @@ header {
 	.name {
 		text-transform: none !important;
 		font-weight: lighter !important;
-		/*font-family: Open Sans !important;*/
 
 		&::before, &::after {
 			display: inline-block;
-			/*margin: auto 0.5em auto 0.5em;*/
 			@include wout-prefix(animation-duration, 4s);
 			@include wout-prefix(animation-timing-function, ease-out);
 			@include wout-prefix(animation-fill-mode, forwards);

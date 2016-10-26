@@ -108,7 +108,15 @@ header {
   header:not(.top) #myCarousel {
     margin-left: 36px;
     -webkit-animation-name: opa;
-    -webkit-animation-duration: 0.4s; }
+    -moz-animation-name: opa;
+    -o-animation-name: opa;
+    -ms-animation-name: opa;
+    animation-name: opa;
+    -webkit-animation-duration: 0.4s;
+    -moz-animation-duration: 0.4s;
+    -o-animation-duration: 0.4s;
+    -ms-animation-duration: 0.4s;
+    animation-duration: 0.4s; }
     header:not(.top) #myCarousel::after {
       background: #2C3E50;
       border-bottom: 1px solid #1a252f; }
@@ -132,7 +140,15 @@ header {
       padding-left: 400px;
       padding-right: 150px;
       -webkit-animation-name: opa;
-      -webkit-animation-duration: 0.4s; }
+      -moz-animation-name: opa;
+      -o-animation-name: opa;
+      -ms-animation-name: opa;
+      animation-name: opa;
+      -webkit-animation-duration: 0.4s;
+      -moz-animation-duration: 0.4s;
+      -o-animation-duration: 0.4s;
+      -ms-animation-duration: 0.4s;
+      animation-duration: 0.4s; }
       header:not(.top) .overcarousel #pres .noms {
         padding-bottom: 5px; }
         header:not(.top) .overcarousel #pres .noms .intro-text .title {
@@ -200,8 +216,7 @@ header {
     left: 0;
     right: 0;
     height: 100%;
-    overflow: hidden;
-    /*transition: 0.4s;*/ }
+    overflow: hidden; }
     header #myCarousel #bg_video {
       width: 100% !important;
       height: auto !important; }
@@ -215,20 +230,38 @@ header {
       background: rgba(0, 0, 0, 0.25); }
   header .name {
     text-transform: none !important;
-    font-weight: lighter !important;
-    /*font-family: Open Sans !important;*/ }
+    font-weight: lighter !important; }
     header .name::before, header .name::after {
       display: inline-block;
-      /*margin: auto 0.5em auto 0.5em;*/
       -webkit-animation-duration: 4s;
+      -moz-animation-duration: 4s;
+      -o-animation-duration: 4s;
+      -ms-animation-duration: 4s;
+      animation-duration: 4s;
       -webkit-animation-timing-function: ease-out;
-      -webkit-animation-fill-mode: forwards; }
+      -moz-animation-timing-function: ease-out;
+      -o-animation-timing-function: ease-out;
+      -ms-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-fill-mode: forwards;
+      -o-animation-fill-mode: forwards;
+      -ms-animation-fill-mode: forwards;
+      animation-fill-mode: forwards; }
     header .name::before {
       content: '<';
-      -webkit-animation-name: name_anim_left; }
+      -webkit-animation-name: name_anim_left;
+      -moz-animation-name: name_anim_left;
+      -o-animation-name: name_anim_left;
+      -ms-animation-name: name_anim_left;
+      animation-name: name_anim_left; }
     header .name::after {
       content: '/>';
-      -webkit-animation-name: name_anim_right; }
+      -webkit-animation-name: name_anim_right;
+      -moz-animation-name: name_anim_right;
+      -o-animation-name: name_anim_right;
+      -ms-animation-name: name_anim_right;
+      animation-name: name_anim_right; }
 
 .overcarousel, .overcarousel .container {
   height: 100%; }
