@@ -1,4 +1,5 @@
 
+/*! Written by Haddad Richard http://richardhaddad.fr */
 
 $color_main: white;
 $font_family: Open Sans, sans-serif;
@@ -11,6 +12,8 @@ $page_colors: (
 );
 
 $color_a: #3498DB;
+$color_black: #484848;
+$header_menu_height: 36px;
 
 @function getColorTon($colors, $ton) {
 	@if($ton == 'normal') {
@@ -121,7 +124,7 @@ body {
 
 header {
 	position: fixed;
-	min-height: 36px;
+	min-height: $header_menu_height;
 	height: 100vh;
 	left: 0;
 	right: 0;
@@ -135,6 +138,10 @@ header {
 	&.top {
 		white-space: normal;
 
+		#myCarousel {
+			margin-top: $header_menu_height;
+		}
+
 		.overcarousel {
 
 			#menu {
@@ -142,10 +149,8 @@ header {
 
 				li {
 					width: 26%;
-					/*margin: 0 !important;*/
 
 					&:first-child {
-						/*display: none;*/
 						width: 0;
 						overflow: hidden;
 					}
@@ -158,7 +163,6 @@ header {
 					a {
 						display: inline-block;
 						width: 100%;
-						/*margin: 0;*/
 
 						.text {
 							width: 100px;
@@ -170,6 +174,10 @@ header {
 
 			#pres {
 				text-align: center;
+				@include wout-prefix(animation-name, blur);
+				@include wout-prefix(animation-duration, 2s);
+
+
 				.liens {
 					margin-top: 20px;
 
@@ -183,8 +191,62 @@ header {
 						}
 					}
 				}
+
+				.todown {
+					position: absolute;
+					display: inline-block;
+					bottom: 0;
+					transform: translateX(-50%);
+					left: 50%;
+					color: white;
+					font-size: 2em;
+					text-align: center;
+					width: 50px;
+					height: 50px;
+					border: 1px dashed transparent;
+					border-radius: 30px !important;
+					transition: 0.4s;
+
+					.glyphicon {
+						vertical-align: middle;
+						margin-right: -3px;
+
+						@include wout-prefix(animation-name, todown);
+						@include wout-prefix(animation-duration, 0.4s);
+						@include wout-prefix(animation-iteration-count, infinite);
+						@include wout-prefix(animation-timing-function, ease-in);
+						@include wout-prefix(animation-direction, alternate-reverse);
+					}
+
+					&:hover {
+						.glyphicon {
+							@include wout-prefix(animation-name, none);
+						}
+						background: white;
+						border-color: $color_black;
+						color: $color_black;
+					}
+				}
 			}
 
+		}
+	}
+
+	@keyframes blur {
+		0% {
+			filter: blur(10px);
+		}
+		100% {
+			filter: blur(0px);
+		}
+	}
+
+	@keyframes todown {
+		0% {
+			transform: translateY(-5px);
+		}
+		100% {
+			transform: translateY(10px);
 		}
 	}
 
@@ -276,6 +338,10 @@ header {
 						}
 					}
 				}
+
+				.todown {
+					display: none;
+				}
 			}
 		}
 	}
@@ -309,7 +375,6 @@ header {
 						width: 0;
 						padding-left: 5px;
 						opacity: 0;
-						/*transition-property: width, opacity;*/
 					}
 
 					&:hover, &.expand {
@@ -333,7 +398,7 @@ header {
 						}
 
 						&:hover {
-							color: #333;
+							color: $color_black;
 							background: white;
 						}
 					}
@@ -352,8 +417,18 @@ header {
 		overflow: hidden;
 
 		#bg_video {
-			width: 100% !important;
-			height: auto !important;
+			min-width: 100%;
+			min-height: 100%;
+			width: auto;
+			height: auto;
+
+			/* For center element even if he's oversized */
+			position: absolute;
+			top: -9999px;
+			bottom: -9999px;
+			left: -9999px;
+			right: -9999px;
+			margin: auto;
 		}
 
 		&::after {
@@ -610,20 +685,4 @@ footer {
 	.lien {
 		margin: 5px;
 	}
-	/*	background-color: #1abc9c;
-		background-image: url("../img/footer.png");
-		width: 100%;
-		height: 281px;
-		text-align:center;
-		padding-top: 125px;
-	
-		#footext {
-			display: inline-block;
-			color: white;
-			border: 1px solid white;
-			padding: 0.3em;
-			font-size: 1.5em;
-			background: rgba(0, 0, 0, 0.2);
-			font-weight: bold;
-		}*/
 }

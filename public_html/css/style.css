@@ -1,3 +1,4 @@
+/*! Written by Haddad Richard http://richardhaddad.fr */
 *:not(.diagram):not(.diag) {
   border-radius: 0px !important; }
 
@@ -72,26 +73,35 @@ header {
   white-space: nowrap; }
   header.top {
     white-space: normal; }
+    header.top #myCarousel {
+      margin-top: 36px; }
     header.top .overcarousel #menu {
       width: 100%; }
       header.top .overcarousel #menu li {
-        width: 26%;
-        /*margin: 0 !important;*/ }
+        width: 26%; }
         header.top .overcarousel #menu li:first-child {
-          /*display: none;*/
           width: 0;
           overflow: hidden; }
         header.top .overcarousel #menu li::before {
           content: none; }
         header.top .overcarousel #menu li a {
           display: inline-block;
-          width: 100%;
-          /*margin: 0;*/ }
+          width: 100%; }
           header.top .overcarousel #menu li a .text {
             width: 100px;
             opacity: 1; }
     header.top .overcarousel #pres {
-      text-align: center; }
+      text-align: center;
+      -webkit-animation-name: blur;
+      -moz-animation-name: blur;
+      -o-animation-name: blur;
+      -ms-animation-name: blur;
+      animation-name: blur;
+      -webkit-animation-duration: 2s;
+      -moz-animation-duration: 2s;
+      -o-animation-duration: 2s;
+      -ms-animation-duration: 2s;
+      animation-duration: 2s; }
       header.top .overcarousel #pres .liens {
         margin-top: 20px; }
         header.top .overcarousel #pres .liens .lien {
@@ -100,6 +110,68 @@ header {
           margin-right: 5px; }
           header.top .overcarousel #pres .liens .lien img {
             margin: 0; }
+      header.top .overcarousel #pres .todown {
+        position: absolute;
+        display: inline-block;
+        bottom: 0;
+        transform: translateX(-50%);
+        left: 50%;
+        color: white;
+        font-size: 2em;
+        text-align: center;
+        width: 50px;
+        height: 50px;
+        border: 1px dashed transparent;
+        border-radius: 30px !important;
+        transition: 0.4s; }
+        header.top .overcarousel #pres .todown .glyphicon {
+          vertical-align: middle;
+          margin-right: -3px;
+          -webkit-animation-name: todown;
+          -moz-animation-name: todown;
+          -o-animation-name: todown;
+          -ms-animation-name: todown;
+          animation-name: todown;
+          -webkit-animation-duration: 0.4s;
+          -moz-animation-duration: 0.4s;
+          -o-animation-duration: 0.4s;
+          -ms-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+          -webkit-animation-iteration-count: infinite;
+          -moz-animation-iteration-count: infinite;
+          -o-animation-iteration-count: infinite;
+          -ms-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+          -webkit-animation-timing-function: ease-in;
+          -moz-animation-timing-function: ease-in;
+          -o-animation-timing-function: ease-in;
+          -ms-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+          -webkit-animation-direction: alternate-reverse;
+          -moz-animation-direction: alternate-reverse;
+          -o-animation-direction: alternate-reverse;
+          -ms-animation-direction: alternate-reverse;
+          animation-direction: alternate-reverse; }
+        header.top .overcarousel #pres .todown:hover {
+          background: white;
+          border-color: #484848;
+          color: #484848; }
+          header.top .overcarousel #pres .todown:hover .glyphicon {
+            -webkit-animation-name: none;
+            -moz-animation-name: none;
+            -o-animation-name: none;
+            -ms-animation-name: none;
+            animation-name: none; }
+@keyframes blur {
+  0% {
+    filter: blur(10px); }
+  100% {
+    filter: blur(0px); } }
+@keyframes todown {
+  0% {
+    transform: translateY(-5px); }
+  100% {
+    transform: translateY(10px); } }
 @keyframes opa {
   0% {
     opacity: 0; }
@@ -174,6 +246,8 @@ header {
           margin-right: 5px; }
           header:not(.top) .overcarousel #pres .liens .lien img {
             margin: 0; }
+      header:not(.top) .overcarousel #pres .todown {
+        display: none; }
   header .overcarousel {
     text-align: left; }
     header .overcarousel #menu {
@@ -194,8 +268,7 @@ header {
         display: inline-block;
         width: 0;
         padding-left: 5px;
-        opacity: 0;
-        /*transition-property: width, opacity;*/ }
+        opacity: 0; }
       header .overcarousel #menu li a:hover .text, header .overcarousel #menu li a.expand .text {
         width: 100px;
         opacity: 1; }
@@ -208,7 +281,7 @@ header {
         header .overcarousel #menu li a[href="#totop"]::after {
           border-left-color: white; }
         header .overcarousel #menu li a[href="#totop"]:hover {
-          color: #333;
+          color: #484848;
           background: white; }
   header #myCarousel {
     position: absolute;
@@ -218,8 +291,17 @@ header {
     height: 100%;
     overflow: hidden; }
     header #myCarousel #bg_video {
-      width: 100% !important;
-      height: auto !important; }
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      /* For center element even if he's oversized */
+      position: absolute;
+      top: -9999px;
+      bottom: -9999px;
+      left: -9999px;
+      right: -9999px;
+      margin: auto; }
     header #myCarousel::after {
       content: ' ';
       position: absolute;
@@ -491,23 +573,7 @@ header {
     color: rgba(255, 255, 255, 0.5); }
 
 footer {
-  text-align: center;
-  /*	background-color: #1abc9c;
-  	background-image: url("../img/footer.png");
-  	width: 100%;
-  	height: 281px;
-  	text-align:center;
-  	padding-top: 125px;
-  
-  	#footext {
-  		display: inline-block;
-  		color: white;
-  		border: 1px solid white;
-  		padding: 0.3em;
-  		font-size: 1.5em;
-  		background: rgba(0, 0, 0, 0.2);
-  		font-weight: bold;
-  	}*/ }
+  text-align: center; }
   footer .lien {
     margin: 5px; }
 

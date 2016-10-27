@@ -1,8 +1,25 @@
 
+// Written by Haddad Richard
+
 $(document).ready(function () {
+	
+	console.log('Hello world !');
+
+	$('a').click(function (e) {
+		var id = $(this).attr('href');
+		if (id[0] !== '#')
+			return;
+		e.preventDefault();
+
+		var speed = 750; // Durée de l'animation (en ms)
+		$('html, body').animate({scrollTop: $(id).offset().top}, speed);
+	});
 
 	check();
 
+	$(window).resize(function () {
+		check();
+	});
 	$(window).scroll(function () {
 		check();
 	});
@@ -58,22 +75,31 @@ $(document).ready(function () {
 			$('#imagemodal .modal-dialog').css('width', this.naturalWidth + 15 * 2 + "px");
 		});
 	});
-	
+
 	$('[data-toggle="tooltip"]').tooltip();
-	
+
 	function check() {
 		var top = $(document).scrollTop();
 		var height = $(window).height();
 		var diff = Math.max(height - top, 36);
+		var video = $('#bg_video')[0];
 
 		$("header").css('height', diff + 'px');
 
 		if (diff <= 36) {
 			$('header').removeClass('top');
-			$('#bg_video')[0].pause();
+			try {
+				video.pause();
+			} catch (e) {
+			}
 		} else {
 			$('header').addClass('top');
-			$('#bg_video')[0].play();
+			if (video.paused) {
+				video.play();
+			}
+			try {
+			} catch (e) {
+			}
 		}
 	}
 
