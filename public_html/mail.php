@@ -1,5 +1,7 @@
 <?php
 
+define('ADRESSE_MAIL', 'richardhaddad@hotmail.fr');
+
 $echo_value = sendMail();
 
 echo json_encode($echo_value);
@@ -12,14 +14,18 @@ function sendMail() {
 		);
 	}
 
-	$nom = wordwrap($_POST["nom"], 70, "\r\n");
-	$contacter = wordwrap($_POST["contacter"], 70, "\r\n");
-	$message = wordwrap($_POST["message"], 70, "\r\n");
+	$nom = wordwrap($_POST["nom"], 70, "\n");
+	$contacter = wordwrap($_POST["contacter"], 70, "\n");
+	$message = wordwrap($_POST["message"], 70, "\n");
 
-	$messageFinal = "NOM(S)\r\n" + $nom + "\r\n\r\n" + "MOYENS DE CONTACT\r\n" + $contacter + "\r\n\r\n" + "MESSAGE FINAL\r\n" + $message + "\r\n\r\n" + "FIN."
+	$messageFinal = "NOM(S)\n" . $nom . "\n\n" . "MOYENS DE CONTACT\n" . $contacter . "\n\n" . "MESSAGE FINAL\n" . $message . "\n\n" . "FIN."
 	;
 
-	$envoye = mail('richardhaddad@hotmail.fr', 'richardhaddad.fr - CONTACT', $messageFinal);
+//	$headers = 'From: ' . ADRESSE_MAIL . "\n";
+//	$headers .= 'Reply-To: ' . ADRESSE_MAIL . "\n";
+//	$headers .= 'Content-Type: text/plain; charset="iso-8859-1"' . "\n";
+//	$headers .= 'Content-Transfer-Encoding: 8bit';
+	$envoye = mail(ADRESSE_MAIL, 'richardhaddad.fr - CONTACT', $messageFinal);
 
 	if (!$envoye) {
 		return array(

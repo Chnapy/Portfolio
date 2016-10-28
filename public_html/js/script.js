@@ -58,11 +58,14 @@ $(document).ready(function () {
 				envoi: 1
 			},
 			success: function (data, textStatus, jqXHR) {
+				data = JSON.parse(data);
 				$("#contact form input[type='submit']").removeAttr("disabled");
 				if (data['success']) {
+					console.log('Send mail : success');
 					$("#contact form input[type='submit']").val("Envoi réussi !");
 					$("#contact form input[type='submit']").css("color", "white");
 				} else {
+					console.log('Sand mail : fail');
 					$("#contact form input[type='submit']").val(data['error_msg']);
 					$("#contact form input[type='submit']").css("color", "#DA4453");
 				}
