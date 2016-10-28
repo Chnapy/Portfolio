@@ -18,7 +18,7 @@
 		var defaults = {
 			size: "100",
 			borderWidth: "10",
-			bgFill: '#E6E9ED',
+			bgFill: '#2c3e50',
 			frFill: '#3BAFDA',
 			textSize: 1.4 + 'em',
 			textColor: '#FFF'

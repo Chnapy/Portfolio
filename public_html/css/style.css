@@ -12,17 +12,19 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   font-family: Open Sans, sans-serif;
+  font-weight: normal;
   color: white !important; }
 
 .a {
   color: inherit !important;
   background-image: linear-gradient(to right, #3498DB, #3498DB);
   background-position: 0 100%;
-  background-size: 0;
-  background-repeat: repeat-x;
-  /*&:hover {*/
   background-size: 100% 2px;
-  /*}*/ }
+  background-repeat: repeat-x;
+  padding: 0 4px;
+  transition: 0.4s; }
+  .a:hover {
+    background-size: 100% 100%; }
 
 .diagram {
   display: inline-block; }
@@ -104,12 +106,6 @@ header {
       animation-duration: 2s; }
       header.top .overcarousel #pres .liens {
         margin-top: 20px; }
-        header.top .overcarousel #pres .liens .lien {
-          display: inline-block;
-          margin-left: 5px;
-          margin-right: 5px; }
-          header.top .overcarousel #pres .liens .lien img {
-            margin: 0; }
       header.top .overcarousel #pres .todown {
         position: absolute;
         display: inline-block;
@@ -208,9 +204,9 @@ header {
     header:not(.top) .overcarousel #pres {
       display: block;
       text-align: left;
-      width: 100%;
-      padding-left: 400px;
-      padding-right: 150px;
+      /*width: 100%;*/
+      margin-left: 400px;
+      margin-right: 150px;
       -webkit-animation-name: opa;
       -moz-animation-name: opa;
       -o-animation-name: opa;
@@ -240,12 +236,6 @@ header {
         width: 150px;
         text-align: right;
         padding-top: 2px; }
-        header:not(.top) .overcarousel #pres .liens .lien {
-          display: inline-block;
-          margin-left: 5px;
-          margin-right: 5px; }
-          header:not(.top) .overcarousel #pres .liens .lien img {
-            margin: 0; }
       header:not(.top) .overcarousel #pres .todown {
         display: none; }
   header .overcarousel {
@@ -344,6 +334,16 @@ header {
       -o-animation-name: name_anim_right;
       -ms-animation-name: name_anim_right;
       animation-name: name_anim_right; }
+
+.lien {
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+  transition: 0.4s; }
+  .lien:hover {
+    transform: scale(1.1); }
+  .lien img {
+    margin: 0; }
 
 .overcarousel, .overcarousel .container {
   height: 100%; }

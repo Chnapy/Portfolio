@@ -51,6 +51,7 @@ body {
 	overflow-x: hidden;
 	overflow-y: scroll;
 	font-family: $font_family;
+	font-weight: normal;
 	color: $color_main !important;
 }
 
@@ -58,12 +59,14 @@ body {
 	color: inherit !important;
 	background-image: linear-gradient(to right, $color_a, $color_a);
 	background-position: 0 100%;
-    background-size: 0;
-    background-repeat: repeat-x;
-
-	/*&:hover {*/
 	background-size: 100% 2px;
-	/*}*/
+    background-repeat: repeat-x;
+	padding: 0 4px;
+	transition: 0.4s;
+
+	&:hover {
+		background-size: 100% 100%;
+	}
 }
 
 .diagram {
@@ -180,16 +183,6 @@ header {
 
 				.liens {
 					margin-top: 20px;
-
-					.lien {
-						display: inline-block;
-						margin-left: 5px;
-						margin-right: 5px;
-
-						img {
-							margin: 0;
-						}
-					}
 				}
 
 				.todown {
@@ -294,9 +287,9 @@ header {
 			#pres {
 				display: block;
 				text-align: left;
-				width: 100%;
-				padding-left: 400px;
-				padding-right: 150px;
+				/*width: 100%;*/
+				margin-left: 400px;
+				margin-right: 150px;
 				@include wout-prefix(animation-name, opa);
 				@include wout-prefix(animation-duration, 0.4s);
 
@@ -327,16 +320,6 @@ header {
 					width: 150px;
 					text-align: right;
 					padding-top: 2px;
-
-					.lien {
-						display: inline-block;
-						margin-left: 5px;
-						margin-right: 5px;
-
-						img {
-							margin: 0;
-						}
-					}
 				}
 
 				.todown {
@@ -405,7 +388,6 @@ header {
 				}
 			}
 		}
-
 	}
 
 	#myCarousel {
@@ -461,6 +443,21 @@ header {
 			content: '/>';
 			@include wout-prefix(animation-name, name_anim_right);
 		}
+	}
+}
+
+.lien {
+	display: inline-block;
+	margin-left: 5px;
+	margin-right: 5px;
+	transition: 0.4s;
+
+	&:hover {
+		transform: scale(1.1);
+	}
+
+	img {
+		margin: 0;
 	}
 }
 

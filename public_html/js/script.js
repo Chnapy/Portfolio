@@ -2,8 +2,15 @@
 // Written by Haddad Richard
 
 $(document).ready(function () {
-	
+
 	console.log('Hello world !');
+
+	$(".diagram").each(function () {
+		$(this).diagram({
+			bgFill: $(this).data('bg'),
+			frFill: $(this).data('fr')
+		});
+	});
 
 	$('a').click(function (e) {
 		var id = $(this).attr('href');
