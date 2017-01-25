@@ -78,7 +78,7 @@ $(document).ready(function () {
 		});
 	});
 
-	$(".image-large").each(function (index, element) {
+	$(".image-large, .carousel-inner img").each(function (index, element) {
 		$(element).click(function () {
 			$('#imagepreview').attr('src', $(element).attr('src'));
 			$('#imagemodal').modal('show');
@@ -111,6 +111,25 @@ $(document).ready(function () {
 			} catch (e) {
 			}
 		}
+
+		$('video:not(#bg_video)').each(function () {
+			var divTop = $(this).offset().top;
+			var divBottom = divTop + $(this).outerHeight();
+			if (divBottom > top && divTop < top + height) {
+				try {
+					if (this.paused) {
+						this.play();
+					}
+				} catch (e) {
+				}
+			} else {
+				try {
+					this.pause();
+				} catch (e) {
+				}
+			}
+		});
+
 	}
 
 });

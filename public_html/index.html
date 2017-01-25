@@ -24,7 +24,7 @@ Portfolio of Richard Haddad, coded by him-self :)
 		<header class="top">
 
 			<div id="myCarousel">
-				<video id="bg_video" muted loop poster="img/video_poster.png">
+				<video id="bg_video" muted loop poster="img/posters/main_poster.png">
 					<source src="https://www.dropbox.com/s/ww7bwch3l5n05vw/portfolio_bg_jim.mp4?dl=1" type='video/mp4'>
 					<source src="https://www.dropbox.com/s/y7y9e8u169imga6/portfolio_bg_jim.webm?dl=1" type='video/webm'>
 					<source src="https://www.dropbox.com/s/x5mgx8qfjstrvig/portfolio_bg_jim.ogv?dl=1" type='video/ogg'>
@@ -55,14 +55,17 @@ Portfolio of Richard Haddad, coded by him-self :)
 					<div class="row noms">
 						<div class="col-lg-12">
 							<div class="intro-text">
-								<div class="title"><div class="name">Richard Haddad</div></div>
-								<span class="skills">Développeur Java et Web</span>
+								<div class="title"><div class="name balise">Richard Haddad</div></div>
+								<span class="skills">Développeur Java et Web
+									<a href="#contact" class="etat balise"><span class="a">Recherche un stage</span></a>
+								</span>
 							</div>
 						</div>
 					</div>
 
 					<div class="row liens">
 						<div class="col-lg-12">
+							<a class="lien cv" href="https://www.dropbox.com/s/pblzhlzxqwz0isb/CV.pdf?dl=0" target='_blank' data-toggle="tooltip" data-placement="bottom" title="Accéder à mon CV"></a>
 							<a class='lien github' href='https://github.com/Chnapy' target='_blank' data-toggle="tooltip" data-placement="bottom" title="Accéder à ma page GitHub"><img src='img/GitHub-Mark-Light-32px.png' alt='Acces_GitHub'/></a>
 							<a class='lien linkedin' href='https://www.linkedin.com/in/richard-haddad' target='_blank' data-toggle="tooltip" data-placement="bottom" title="Accéder à ma page LinkedIn"><img src='img/In-White-28px-R.png' alt='Acces_LinkedIn'/></a>
 						</div>
@@ -89,24 +92,23 @@ Portfolio of Richard Haddad, coded by him-self :)
 							<span class='label label-primary label-title'>Java</span><br/>
 							<div class="progress bar" data-toggle="tooltip" data-placement="bottom" title="">
 								<div class="progress-bar progress-bar-p" role="progressbar" 
-									 aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%">
+									 aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
 								</div>
 							</div>
 							<div>
 								<span class="label label-default">Java 8</span>
 								<span class="label label-default">MVC</span>
-								<span class="label label-default">Collections</span>
 								<span class="label label-default">Threads</span>
 								<span class="label label-default">Sockets</span>
-								<span class="label label-default">Énumérations</span>
 								<span class="label label-default">Exceptions</span>
 								<span class="label label-default">Gestion XML/JSON</span>
-								<span class="label label-default">Abstraction</span>
-								<span class="label label-default">Interface</span>
+								<span class="label label-default">Stream</span>
+								<span class="label label-default">JDBC</span>
+								<span class="label label-default">Collections</span>
 							</div>
 						</div>
 						<div class="col-sm-6 col-md-2 contDiag">
-							<div id="javafx" class="diagram" data-percent="75" data-name="JavaFX" data-fr="#3BAFDA"></div>
+							<div id="javafx" class="diagram" data-percent="85" data-name="JavaFX" data-fr="#3BAFDA"></div>
 						</div>
 						<div class="col-sm-6 col-md-2 contDiag">
 							<div id="libgdx" class="diagram" data-percent="95" data-name="LibGdx" data-fr="#3BAFDA"></div>
@@ -118,29 +120,95 @@ Portfolio of Richard Haddad, coded by him-self :)
 				<div class="langage">
 					<div class="row">
 						<div class='col-sm-12 col-md-8'>
+							<span class='label label-warning label-title'>JavaScript</span><br/>
+							<div class="progress bar">
+								<div class="progress-bar progress-bar-warning" role="progressbar" 
+									 aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+								</div>
+							</div>
+							<div>
+								<span class="label label-default">POO</span>
+								<span class="label label-default">ECMA6</span>
+								<span class="label label-default">Websockets</span>
+								<span class="label label-default">socket.io</span>
+								<span class="label label-default">Ajax</span>
+								<span class="label label-default">RequireJS</span>
+								<span class="label label-default">AngularJS</span>
+								<span class="label label-default">Canvas</span>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-2 contDiag">
+							<div id="jquery" class="diagram" data-percent="85" data-name="jQuery" data-fr="#F6BB42"></div>
+						</div>
+						<div class="col-sm-6 col-md-2 contDiag">
+							<div id="bootstrap" class="diagram" data-percent="40" data-name="ReactJS" data-fr="#F6BB42"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="langage">
+					<div class="row">
+						<div class='col-sm-12 col-md-8'>
+							<span class='label label-primary label-title'>J2E</span><br/>
+							<div class="progress bar">
+								<div class="progress-bar progress-bar-primary" role="progressbar" 
+									 aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+								</div>
+							</div>
+							<div>
+								<span class="label label-default">Servlet</span>
+								<span class="label label-default">JSP</span>
+								<span class="label label-default">Cookie</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="langage">
+					<div class="row">
+						<div class='col-sm-12 col-md-8'>
 							<span class='label label-success label-title'>PHP</span><br/>
 							<div class="progress bar">
 								<div class="progress-bar progress-bar-success" role="progressbar" 
-									 aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+									 aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%">
 								</div>
 							</div>
 							<div>
 								<span class="label label-default">MVC</span>
 								<span class="label label-default">POO</span>
+								<span class="label label-default">cURL</span>
+								<span class="label label-default">PDO</span>
 								<span class="label label-default">Abstraction</span>
-								<span class="label label-default">Interface</span>
 								<span class="label label-default">Gestion XML/JSON</span>
 							</div>
-						</div>
-						<div class="col-sm-6 col-md-2 contDiag">
-							<div id="html" class="diagram" data-percent="90" data-name="HTML5" data-fr="#8CC152"></div>
-						</div>
-						<div class="col-sm-6 col-md-2 contDiag">
-							<div id="css" class="diagram" data-percent="80" data-name="CSS3" data-fr="#8CC152"></div>
 						</div>
 					</div>
 				</div>
 
+				<div class="langage">
+					<div class="row">
+						<div class='col-sm-12 col-md-8'>
+							<span class='label label-info label-title'>HTML5 & CSS3</span><br/>
+							<div class="progress bar">
+								<div class="progress-bar progress-bar-info" role="progressbar" 
+									 aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+								</div>
+							</div>
+							<div>
+								<span class="label label-default">Transition</span>
+								<span class="label label-default">Animation</span>
+								<span class="label label-default">Filtre</span>
+								<span class="label label-default">Media queries</span>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-2 contDiag">
+							<div class="diagram" data-percent="85" data-name="Bootstrap" data-fr="#37bc9b"></div>
+						</div>
+						<div class="col-sm-6 col-md-2 contDiag">
+							<div class="diagram" data-percent="60" data-name="SASS" data-fr="#37bc9b"></div>
+						</div>
+					</div>
+				</div>
 
 				<div class="langage">
 					<div class="row">
@@ -152,6 +220,9 @@ Portfolio of Richard Haddad, coded by him-self :)
 								</div>
 							</div>
 							<div>
+								<span class="label label-default">Oracle</span>
+								<span class="label label-default">Trigger</span>
+								<span class="label label-default">Vues</span>
 								<span class="label label-default">Transactions</span>
 							</div>
 						</div>
@@ -167,22 +238,15 @@ Portfolio of Richard Haddad, coded by him-self :)
 				<div class="langage">
 					<div class="row">
 						<div class='col-sm-12 col-md-8'>
-							<span class='label label-warning label-title'>JavaScript</span><br/>
+							<span class='label label-success label-title'>C</span><br/>
 							<div class="progress bar">
-								<div class="progress-bar progress-bar-warning" role="progressbar" 
-									 aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+								<div class="progress-bar progress-bar-success" role="progressbar" 
+									 aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
 								</div>
 							</div>
 							<div>
-								<span class="label label-default">Canvas</span>
-								<span class="label label-default">POO</span>
+								<span class="label label-default">pthread</span>
 							</div>
-						</div>
-						<div class="col-sm-6 col-md-2 contDiag">
-							<div id="jquery" class="diagram" data-percent="75" data-name="jQuery" data-fr="#F6BB42"></div>
-						</div>
-						<div class="col-sm-6 col-md-2 contDiag">
-							<div id="bootstrap" class="diagram" data-percent="85" data-name="Bootstrap" data-fr="#F6BB42"></div>
 						</div>
 					</div>
 				</div>
@@ -200,20 +264,21 @@ Portfolio of Richard Haddad, coded by him-self :)
 
 				<div class="timeline">
 					<dl>
-						<dt>2015</dt>
+						<dt>2016</dt>
 						<dd class="pos-right clearfix">
 							<div class="circ"></div>
-							<div class="time">2015</div>
+							<div class="time"></div>
 							<div class="events">
 								<div class="pull-left">
-									<img class="events-object img-rounded" src="img/timeline/logo-diderot.png" alt='logo-diderot'>
+									<img class="events-object img-rounded" src="img/timeline/logo-descartes.png" alt='logo-diderot'>
 								</div>
 								<div class="events-body">
-									<h4 class="events-heading">Licence Informatique <span class='label label-default'>WIP - 3<sup>ème</sup> année</span></h4>
-									<p>Préparation d'une licence informatique à l'Université Paris Diderot.</p>
+									<h4 class="events-heading">Licence Professionnelle Génie logiciel<span class='label label-default'>WIP</span></h4>
+									<p>Préparation d'une <b>Licence professionnelle génie logiciel</b> à l'IUT Paris 16 Descartes.</p>
 								</div>
 							</div>
 						</dd>
+						<dt>2015</dt>
 						<dd class="pos-left clearfix">
 							<div class="circ"></div>
 							<div class="time">Avril-Juin 2015</div>
@@ -241,7 +306,7 @@ Portfolio of Richard Haddad, coded by him-self :)
 								</div>
 								<div class="events-body">
 									<h4 class="events-heading">DUT Informatique</h4>
-									<p>Obtention d'un DUT Informatique à l'IUT de Montreuil Paris 8.</p>
+									<p>Obtention d'un <b>DUT Informatique</b> à l'IUT de Montreuil Paris 8.</p>
 								</div>
 							</div>
 						</dd>
@@ -255,7 +320,7 @@ Portfolio of Richard Haddad, coded by him-self :)
 								</div>
 								<div class="events-body">
 									<h4 class="events-heading">Bac S option SI</h4>
-									<p>Obtention d'un Bac Scientifique option Science de l'Ingénieur au Lyçée Christophe Colomb de Sucy-en-Brie.</p>
+									<p>Obtention d'un <b>Bac Scientifique</b> option Science de l'Ingénieur au Lyçée Christophe Colomb de Sucy-en-Brie.</p>
 								</div>
 							</div>
 						</dd>
@@ -277,48 +342,58 @@ Portfolio of Richard Haddad, coded by him-self :)
 				<div class="row">
 					<div class="col-md-12">
 						<div class="jumbotron">
-							<h1>TimeFlies - Le client <span class='label label-default'>WIP</span></h1>
-							<div id="carousel-timeflies-client" class="carousel slide" data-ride="carousel" data-interval="5000">
-								<ol class="carousel-indicators">
-									<li class="active" data-target="#carousel-timeflies-client" data-slide-to="0"></li>
-									<li data-target="#carousel-timeflies-client" data-slide-to="1"></li>
-									<li data-target="#carousel-timeflies-client" data-slide-to="2"></li>
-									<li data-target="#carousel-timeflies-client" data-slide-to="3"></li>
-								</ol>
-								<div class="carousel-inner">
-									<div class="item active"><img src="img/projets/timeflies_client/timeflies_client_1.png" alt='timeflies_client_1'></div>
-									<div class="item"><img src="img/projets/timeflies_client/timeflies_client_2.png" alt='timeflies_client_2'></div>
-									<div class="item"><img src="img/projets/timeflies_client/timeflies_client_3.png" alt='timeflies_client_3'></div>
-									<div class="item"><img src="img/projets/timeflies_client/timeflies_client_4.png" alt='timeflies_client_4'></div>
-								</div>
-								<div class='image-sous-titre'>Les images montrées ne représentent en rien la version finale prévue.</div>
+							<h1>TimeFlies - Client & Serveur <span class='label label-default'>WIP</span></h1>
+							<div class="jumbotron-photo">
+								<video muted controls loop autoplay poster="img/posters/timeflies_client_proto_poster.png">
+									<source src="https://www.dropbox.com/s/nmmqvtcon91uskw/timeflies_client_proto_video.mp4?dl=1" type='video/mp4'>
+									<source src="https://www.dropbox.com/s/66dyg7jy1ilr6tx/timeflies_client_proto_video.webm?dl=1" type='video/webm'>
+								</video>
+								<div class='image-sous-titre'>Présentation d'un prototype. Plein écran conseillé.</div>
 							</div>
 							<div class="jumbotron-contents">
 								<p>
-									TimeFlies est un projet de jeu vidéo pensé par 2 amis et moi-même.<br/>
-									Je m'occupe de la conception et du développement du client, de l'éditeur de carte, et du site web du projet.<br/>
-									<br/>
-									La conception a débuté en septembre 2014. Le développement en avril 2015.<br/>
-									La sortie d'un version stable et jouable du client est prévue pour début 2016.<br/>
-									<br/>
-									Je considère TimeFlies comme étant mon projet le plus ambitieux et avec le plus long développement prévu.
+									TimeFlies est un projet de jeu vidéo conçu par moi-même.<br/>
+									Le projet est composé de plusieurs parties :
 								</p>
-								<h2>Description brêve</h2>
+								<ul>
+									<li>Le <b>client</b>, possédé pour le joueur</li>
+									<li>Le <b>serveur</b>, installé à mon domicile (hébergement OVH envisagé à terme)</li>
+									<li>L'<b>éditeur de cartes</b>, utilisable par le client pour créer ses propres cartes</li>
+									<li>Le <b>site web</b>, accessible par tous comme portail</li>
+								</ul>
 								<p>
-									TimeFlies est un jeu multijoueur de type Tactical-RPG en vue isométrique.<br/>
-									Il cherche(ra) à se démarquer par l'exclusivité de la partie combat, de l'absence d'aléatoire, et de la mise en valeur de la rapidité d'action du joueur.
+									La conception a débuté en septembre 2014. Le développement en avril 2015.<br/>
+									Pour le moment aucune date de release n'est fixée, un prototype jouable pourrait néanmoins être <i>envisagé</i> pour l'année 2017.<br/>
+									<br/>
+									Je considère TimeFlies comme étant mon projet le plus ambitieux (et de loin) et avec le plus long développement prévu. Le projet ne présente pas de grandes difficultés, juste un temps de développement (très) long.
+									<br/>
+									<br/>
+									Un portage du client, actuellement fait en Java/FX8 (précédemment avec LibGDX), est en cours vers les technologies web (ReactJS notamment) afin de faciliter la conception de la vue (grâce au CSS notamment) et faciliter le déploiement web.
+								</p>
+								<h2>Description brêve du jeu</h2>
+								<p>
+									TimeFlies est un jeu multijoueur de type Tactical-RPG en vue isométrique (similaire aux jeux Ankama: Dofus, etc).<br/>
+									Il cherche(ra) à se démarquer par l'exclusivité de la partie combat, de l'absence d'aléatoire, et de la mise en valeur de la rapidité de reflexion et d'action du joueur.
 								</p>
 								<h2>Technique</h2>
 								<p>
-									Le jeu est séparé en deux : le client (que possèdera le joueur) et le serveur (unique).<br/>
-									Le client est conçu en Java (1.8) avec le framework LibGdx. Le développement suit le pattern MVC.
+									Conçu en premier lieu entièrement en Java et la librairie <b>LibGDX</b>, puis avec <b>JavaFX</b>, pour enfin porter le client en techno web (<b>Websockets socket.io</b> & <b>ReactJS</b>). Le serveur, en Java, utilise une implémentation du framework <b>socket.io</b>. 
+									<br/>Le développement suit le pattern MVC.
 								</p>
 								<div class='links'>
-									<a href='fichiers/timeflies_client_dev231015.jar' title='Télécharger le fichier .jar'><img src='img/jar_logo.png' alt='timeflies_jar'/></a>
-									<a href='https://github.com/Chnapy/TimeFlies' title='Accéder à la page GitHub'><img src='img/GitHub-Mark-Light-32px.png' alt='timeflies_github'/></a>
+									Client : 
+									<a href='https://github.com/Chnapy/Timeflies_horscombat' target="_blank" title='Accéder à la page GitHub'><img src='img/GitHub-Mark-Light-32px.png' alt='timeflies_github'/><span class="a">Version actuelle (avec JavaFX)</span></a>
+									<a href='https://github.com/Chnapy/TimeFlies' target="_blank" title='Accéder à la page GitHub'><img src='img/GitHub-Mark-Light-32px.png' alt='timeflies_github'/><span class="a">Ancienne version (avec LibGDX)</span></a>
+									<br/>
+									<br/>
+									Serveur : 
+									<a href='https://github.com/Chnapy/Timeflies_Serveur' target="_blank" title='Accéder à la page GitHub'><img src='img/GitHub-Mark-Light-32px.png' alt='timeflies_github'/></a>
+									<br/>
+									<br/>
+									Documents : <a class="a" href="https://www.dropbox.com/s/x30cztdbc1tow3e/TimeFlies_GDD_20122016.pdf?dl=0" target="_blank" title="Accéder au GDD">Game Design Document</a>, <a class="a" href="https://www.dropbox.com/s/t712vt59rqvj4vk/mcd_040117.pdf?dl=0" target="_blank" title="Accéder au MCD">MCD</a>
 								</div>
 								<div class='langages_used'>
-									<span class='label label-primary'>Java</span><span class='label label-primary'>LibGdx</span><span class='label label-default'>MVC</span>
+									<span class='label label-primary'>Java</span><span class='label label-primary'>JavaFX</span><span class='label label-primary'>LibGdx</span><span class='label label-default'>MVC</span>
 								</div>
 							</div>
 						</div>
@@ -329,19 +404,17 @@ Portfolio of Richard Haddad, coded by him-self :)
 					<div class="col-md-6">
 						<div class="jumbotron">
 							<h1>TimeFlies - Le site web</h1>
-							<div class="jumbotron-photo"><img class="image-large" src="img/projets/timeflies_site/timeflies_site_1.png" alt='timeflies_site'></div>
+							<div class="jumbotron-photo"><img class="image-large" src="img/projets/timeflies_site/timeflies_site_1.jpg" alt='timeflies_site'></div>
 							<div class="jumbotron-contents">
 								<p>
-									Le site a été conçu afin de fournir des informations sur la conception du jeu TimeFlies.<br/>
-									<br/>
-									Il est encore vide de contenu (si on ne compte pas les "tests") mais commencera à être rempli lorsqu'une version présentable du jeu sera disponible.
+									Le site a été conçu afin de fournir des informations sur la conception du jeu TimeFlies, ainsi qu'un accès aux différentes versions alpha et bêta.
 								</p>
 								<h2>Description</h2>
 								<p>
 									Il permet le tri entre les différents articles disponibles selon des critères choisis par l'utilisateur.<br/>
 									Le site permet également de déposer des commentaires sur les articles, de les "liker", de discuter avec les développeurs.<br/>
 									<br/>
-									Côté développeurs, ces derniers peuvent ajouter de nouveaux articles (avec éventuellement un sondage), supprimer des commentaires, modifier des articles, les supprimer ...
+									Côté développeurs, ces derniers peuvent ajouter de nouveaux articles (avec éventuellement un sondage), supprimer des commentaires, modifier des articles, les supprimer, etc.
 								</p>
 								<h2>Technique</h2>
 								<p>
@@ -351,7 +424,8 @@ Portfolio of Richard Haddad, coded by him-self :)
 									jQuery est également utilisé notamment pour le tri dynamique des articles.
 								</p>
 								<div class='links'>
-									<a href='http://timeflies.fr' title='Accéder au site www.timeflies.fr'>www.timeflies.fr</a>
+									Le site ne possède pas encore d'hébergement.
+									<!--<a href='http://timeflies.fr' title='Accéder au site www.timeflies.fr'>www.timeflies.fr</a>-->
 								</div>
 								<div class='langages_used'>
 									<span class='label label-success'>PHP</span><span class='label label-warning'>jQuery</span><span class='label label-warning'>Bootstrap</span><span class='label label-danger'>PostGreSQL</span><span class='label label-default'>MVC</span>
@@ -362,10 +436,16 @@ Portfolio of Richard Haddad, coded by him-self :)
 					<div class="col-md-6">
 						<div class="jumbotron">
 							<h1>TimeFlies - L'éditeur de carte</h1>
-							<div class="jumbotron-photo"><img class="image-large" src="img/projets/timeflies_editeur/timeflies_editeur_1.png" alt='timeflies_editeur'></div>
+							<div class="jumbotron-photo">
+								<!--								<img class="image-large" src="img/projets/timeflies_editeur/timeflies_editeur_1.png" alt='timeflies_editeur'>-->
+								<video muted controls loop autoplay poster="img/posters/timeflies_editeur_poster.png">
+									<source src="https://www.dropbox.com/s/mfpwfms1oxyfid0/timeflies_editeur_video.mp4?dl=1" type='video/mp4'>
+									<source src="https://www.dropbox.com/s/j7hyhyjqa42cmc3/timeflies_editeur_video.webm?dl=1" type='video/webm'>
+								</video>
+							</div>
 							<div class="jumbotron-contents">
 								<p>
-									Le jeu TimeFlies s'appuyant sur des cartes stockées dans des fichiers, il était rapidement nécessaire de concevoir un éditeur de carte, à la fois pour nous, développeurs, mais aussi pour les futurs joueurs, afin qu'ils puissent créer leurs propres cartes et les partager.<br/>
+									Le jeu TimeFlies s'appuyant sur des cartes stockées dans des fichiers, il était rapidement nécessaire de concevoir un éditeur de carte, à la fois pour moi, développeur, mais aussi pour les futurs joueurs, afin qu'ils puissent créer leurs propres cartes et les partager.<br/>
 									<br/>
 									Certaines fonctions secondaires de l'éditeur doivent encore être intégrées.
 								</p>
@@ -383,11 +463,11 @@ Portfolio of Richard Haddad, coded by him-self :)
 								</ul>
 								<h2>Technique</h2>
 								<p>
-									L'éditeur a été conçu en Java (1.8) avec JavaFX (8). Le développement a suivi le pattern MVC.
+									L'éditeur a été conçu en Java8 avec JavaFX8. Le développement a suivi le pattern MVC.
 								</p>
 								<div class='links'>
-									<a href='fichiers/TimeFlies_EditeurMap.jar' title='Télécharger le fichier .jar'><img src='img/jar_logo.png' alt='timeflies_editeur_jar'/></a>
-									<a href='https://github.com/Chnapy/TimeFlies_EditeurMap' title='Accéder à la page GitHub'><img src='img/GitHub-Mark-Light-32px.png' alt='timeflies_editeur_github'/></a>
+									<a href='https://github.com/Chnapy/TimeFlies_EditeurMap/releases' target="_blank" title='Télécharger une release'><img src='img/jar_logo.png' alt='timeflies_editeur_jar'/></a>
+									<a href='https://github.com/Chnapy/TimeFlies_EditeurMap' target="_blank" title='Accéder à la page GitHub'><img src='img/GitHub-Mark-Light-32px.png' alt='timeflies_editeur_github'/></a>
 								</div>
 								<div class='langages_used'>
 									<span class='label label-primary'>Java</span><span class='label label-primary'>JavaFX</span><span class='label label-default'>MVC</span>
@@ -397,7 +477,138 @@ Portfolio of Richard Haddad, coded by him-self :)
 					</div>
 				</div>
 
+				<div class="row">
+					<div class="col-md-12">
+						<div class="jumbotron">
+							<h1>Vidéothèque</h1>
+							<div id="carousel-videotheque" class="carousel slide" data-ride="carousel" data-interval="5000">
+								<ol class="carousel-indicators">
+									<li class="active" data-target="#carousel-videotheque" data-slide-to="0"></li>
+									<li data-target="#carousel-videotheque" data-slide-to="1"></li>
+									<li data-target="#carousel-videotheque" data-slide-to="2"></li>
+									<li data-target="#carousel-videotheque" data-slide-to="3"></li>
+									<li data-target="#carousel-videotheque" data-slide-to="4"></li>
+									<li data-target="#carousel-videotheque" data-slide-to="5"></li>
+									<li data-target="#carousel-videotheque" data-slide-to="6"></li>
+									<li data-target="#carousel-videotheque" data-slide-to="7"></li>
+									<li data-target="#carousel-videotheque" data-slide-to="8"></li>
+								</ol>
+								<div class="carousel-inner">
+									<div class="item active"><img src="img/projets/videotheque/vitrine_1.jpg" alt=''></div>
+									<div class="item"><img src="img/projets/videotheque/vitrine_2.jpg" alt=''></div>
+									<div class="item"><img src="img/projets/videotheque/vitrine_3.jpg" alt=''></div>
+									<div class="item"><img src="img/projets/videotheque/vitrine_alt.jpg" alt=''></div>
+									<div class="item"><img src="img/projets/videotheque/fiche_1.jpg" alt=''></div>
+									<div class="item"><img src="img/projets/videotheque/fiche_2.jpg" alt=''></div>
+									<div class="item"><img src="img/projets/videotheque/fiche_3.jpg" alt=''></div>
+									<div class="item"><img src="img/projets/videotheque/params.jpg" alt=''></div>
+									<div class="item"><img src="img/projets/videotheque/params_2.jpg" alt=''></div>
+								</div>
+							</div>
+							<div class="jumbotron-contents">
+								<p>
+									Vidéothèque est un projet de media center connecté conçu par moi-même en environ 1 mois.<br/>
+									La particularité principale de ce media center est de lier les films et séries de l'utilisateur aux données du site web <a class="a" href="http://senscritique.com" target="_blank">www.senscritique.com</a>. Ainsi l'utilisateur a accès à l'ensemble des informations de l'oeuvre, tel les personnes ayant travaillés dessus (réalisateur, etc) ainsi que les actions de l'utilisateur sur son compte SensCritique (note donnée à l'oeuvre, etc).<br/>
+									<br/>
+									J'ai prété une attention particulière à l'apparence de l'application ainsi qu'à son ergonomie.
+								</p>
+								<h2>Description</h2>
+								<p>
+									Cette vidéothèque permet la lecture, via un lecteur externe, de fichiers vidéo ayant préalablement été spécifiés au programme. L'utilisateur a ensuite accès à l'ensemble de ses oeuvres sous forme d'une bibliothèque listant de manière visuellement agréable les différents films et séries.<br/>
+									L'utilisateur peut alors accéder à la fiche de chaque oeuvre qui sera composée des données récupérées sur le site <a class="a" href="http://senscritique.com" target="_blank">www.senscritique.com</a> ainsi qu'un accès aux différents fichiers de l'oeuvre.<br/>
+									L'utilisateur peut également se connecter avec ses identifiants <a class="a" href="http://senscritique.com" target="_blank">www.senscritique.com</a> afin d'obtenir plus d'informations sur chaque oeuvre (ses notes notamment).
+								</p>
+								<h2>Technique</h2>
+								<p>
+									L'application est conçu en PHP, Javascript, HTML5, CSS3, et utilise jQuery. L'utilisation de fichiers JSON me permet de ne pas utiliser les bases de donnée habituelles.<br/>
+									Son déploiement en application desktop est possible grâce au framework PHP Desktop (pour Windows uniquement).
+								</p>
+								<div class='links'>
+									<a href='https://github.com/Chnapy/Videotheque/releases' target="_blank" title='Télécharger une release'><img src='img/jar_logo.png' alt='videotheque_dist'/></a>
+									<a href='https://github.com/Chnapy/Videotheque' target="_blank" title='Accéder à la page GitHub'><img src='img/GitHub-Mark-Light-32px.png' alt='videotheque_github'/></a>
+								</div>
+								<div class='langages_used'>
+									<span class='label label-success'>PHP</span><span class='label label-warning'>JavaScript</span><span class='label label-warning'>jQuery</span><span class='label label-success'>HTML5</span><span class='label label-success'>CSS3</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
 				<div class='row'>
+
+					<div class="col-md-6">
+						<div class="jumbotron">
+							<h1>Transanimation</h1>
+							<div class="jumbotron-photo">
+								<video muted controls loop autoplay poster="img/posters/transanimation_poster.jpg">
+									<source src="https://www.dropbox.com/s/2eoikdkshf7yezi/transanimation_video.mp4?dl=1" type='video/mp4'>
+									<source src="https://www.dropbox.com/s/h1ppex8mikc4bff/transanimation_video.webm?dl=1" type='video/webm'>
+								</video>
+							</div>
+							<div class="jumbotron-contents">
+								<p>
+									Dans le but de concevoir des court-metrages animés j'ai développé le prototype d'un moteur d'animation 2D.
+								</p>
+								<h2>Description</h2>
+								<p>
+									Le fonctionnement du moteur suit une logique simple.<br/>
+									Les différentes entités (personnages, caméras, ...) sont créées en amont.<br/>
+									A chacune d'entre-elles une liste d'actions leur est affectée, chacune de ces actions devant être exécutée à un temps T.<br/>
+									Enfin, le programme lance l'animation, et les actions se lancent comme prévue.
+								</p>
+								<h2>Technique</h2>
+								<p>
+									Le programme utilise Java8 avec JavaFX8.
+								</p>
+								<div class='links'>
+									<a href='https://github.com/Chnapy/Transanimation/releases' target="_blank" title='Télécharger une release'><img src='img/jar_logo.png' alt='transanimation_jar'/></a>
+									<a href='https://github.com/Chnapy/Transanimation' target="_blank" title='Accéder à la page GitHub'><img src='img/GitHub-Mark-Light-32px.png' alt='transanimation_github'/></a>
+								</div>
+								<div class='langages_used'>
+									<span class='label label-primary'>Java</span><span class='label label-primary'>JavaFX</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="jumbotron">
+							<h1>-WTG- Jack</h1>
+							<div class="jumbotron-photo">
+								<video muted controls loop autoplay poster="img/posters/wtg_jack_poster.png">
+									<source src="https://www.dropbox.com/s/pr9a63bsw557i1e/wtg_jack_video.mp4?dl=1" type='video/mp4'>
+									<source src="https://www.dropbox.com/s/f2uu0n5grh6wy2m/wtg_jack_video.webm?dl=1" type='video/webm'>
+								</video>
+							</div>
+							<div class="jumbotron-contents">
+								<p>
+									Pokemon ! Conçu seul en quelques jours afin d'essayer un système de mapping via des tuiles.<br/>
+									Baladez-vous dans tout Bourg Palette ! Il y a même un dresseur !
+								</p>
+								<h2>Description</h2>
+								<p>
+									La partie exploration est fonctionnelle (on ne peut pas entrer dans les maisons cependant).
+									Il reste les combats à gérer, et quelques menus.
+								</p>
+								<h2>Technique</h2>
+								<p>
+									Le programme utilise Java8 avec LibGDX et Gradle. La map est chargée depuis un fichier .tmx créé avec le logiciel Tiled Map Editor.
+								</p>
+								<div class='links'>
+									<a href='https://github.com/Chnapy/-WTG-Jack/releases' target="_blank" title='Télécharger une release'><img src='img/jar_logo.png' alt='wtg_jack_jar'/></a>
+									<a href='https://github.com/Chnapy/-WTG-Jack' target="_blank" title='Accéder à la page GitHub'><img src='img/GitHub-Mark-Light-32px.png' alt='wtg_jack_github'/></a>
+								</div>
+								<div class='langages_used'>
+									<span class='label label-primary'>Java</span><span class='label label-primary'>LibGDX</span><span class='label label-primary'>Gradle</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="row">
 					<div class="col-sm-6 col-md-3">
 						<div class="thumbnail">
 							<img class="img-rounded image-large" src="img/projets/envrac/site.png" alt='site'>
@@ -410,7 +621,6 @@ Portfolio of Richard Haddad, coded by him-self :)
 									Le site ayant été conçu pendant ma première année de DUT, j'ai préféré en refaire un plus facile à parcourir.
 								</p>
 								<div class='links'>
-									<a href='../oldPortfolio/index.php' title='ancien_portfolio'>Lien vers l'ancienne version</a>
 								</div>
 								<div class='langages_used'>
 									<span class='label label-success'>PHP</span><span class='label label-warning'>JavaScript</span><span class='label label-success'>HTML5</span><span class='label label-success'>CSS3</span>
@@ -429,7 +639,7 @@ Portfolio of Richard Haddad, coded by him-self :)
 									A terme je souhaite lui faire faire de la reconnaissance vocale rudimentaire.
 								</p>
 								<div class='links'>
-									<a href='fichiers/Speech2.jar' title='Télécharger le fichier .jar'><img src='img/jar_logo.png' alt='speech_jar'/></a>
+									<a href='fichiers/Speech2.jar' target="_blank" title='Télécharger le fichier .jar'><img src='img/jar_logo.png' alt='speech_jar'/></a>
 								</div>
 								<div class='langages_used'>
 									<span class='label label-primary'>Java</span><span class='label label-primary'>JavaFX</span><span class='label label-default'>MVC</span>
@@ -448,7 +658,7 @@ Portfolio of Richard Haddad, coded by him-self :)
 									L'IDE gère la coloration syntaxique, la création et suppression de projets, et la compilation. Dans ce dernier cas une fenêtre s'ouvre avec la fiction qui démarre.
 								</p>
 								<div class='links'>
-									<a href='fichiers/IDE.zip' title='Télécharger le .zip contenant le fichier .jar'><img src='img/jar_logo.png' alt='ide_jar'/></a>
+									<a href='fichiers/IDE.zip' target="_blank" title='Télécharger le .zip contenant le fichier .jar'><img src='img/jar_logo.png' alt='ide_jar'/></a>
 								</div>
 								<div class='langages_used'>
 									<span class='label label-primary'>Java</span><span class='label label-primary'>JavaFX</span>
@@ -475,6 +685,43 @@ Portfolio of Richard Haddad, coded by him-self :)
 						</div>
 					</div>
 				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="jumbotron">
+							<h1>Infiltrator</h1>
+
+							<!-- Scirra Arcade Embed for 'Infiltrator'. -->
+							<div style="display:inline-block;text-align:center;width:100%;">
+								<iframe style="width:979px;height:551px;border:0;margin:auto;" allowfullscreen="true" msallowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" sandbox="allow-same-origin allow-popups allow-scripts allow-pointer-lock allow-orientation-lock allow-popups" src="https://games.scirra.net/games/14614/play?utm_source=ScirraWebsite&utm_medium=EmbedIframe&utm_campaign=ScirraArcade"></iframe>
+								<div class="image-sous-titre">
+									<b>En cas d'écran noir, désactivez votre bloqueur de pub.</b>
+									<br/>Hébergé par <a href="https://www.scirra.com/arcade/action-games/infiltrator-14614" target="_blank" title="Addicting games">Scirra Arcade</a>
+								</div>
+							</div>
+
+							<div class="jumbotron-contents">
+								<p>
+									Prototype jouable d'un jeu conçu avec le logiciel de conception de jeux vidéo Construct 2.
+								</p>
+								<!--								<h2>Description</h2>
+																<p>
+								
+																</p>
+																<h2>Technique</h2>
+																<p>
+								
+																</p>-->
+								<div class='links'>
+									<a href='https://www.scirra.com/arcade/action-games/infiltrator-14614' target="_blank" title='Accéder à la page dédiée'><img src='img/jar_logo.png' alt='infiltrator_ext'/></a>
+								</div>
+								<!--								<div class='langages_used'>
+																	<span class='label label-success'>PHP</span><span class='label label-warning'>JavaScript</span><span class='label label-warning'>jQuery</span><span class='label label-success'>HTML5</span><span class='label label-success'>CSS3</span>
+																</div>-->
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 
@@ -489,9 +736,11 @@ Portfolio of Richard Haddad, coded by him-self :)
 
 				<div class='row'>
 					<div class='col-md-6 text-center'>
-						<a href='mailto:contact@richardhaddad.fr' class='btn'>contact@richardhaddad.fr</a>
+						<a href='mailto:contact@richardhaddad.fr' target="_blank" class='btn'>contact@richardhaddad.fr</a>
 						<br/>
-						<a href='mailto:richardhaddad@hotmail.fr' class='btn'>richardhaddad@hotmail.fr</a>
+						<a href='mailto:richardhaddad@hotmail.fr' target="_blank" class='btn'>richardhaddad@hotmail.fr</a>
+						<br/>
+						<a class='lien linkedin' style="margin-top: 20px" href='https://www.linkedin.com/in/richard-haddad' target='_blank' data-toggle="tooltip" data-placement="bottom" title="Accéder à ma page LinkedIn"><img src='img/In-White-28px-R.png' alt='Acces_LinkedIn'/></a>
 					</div>
 					<div class='col-md-6 text-center'>
 						<form action='' method="post">
@@ -519,10 +768,14 @@ Portfolio of Richard Haddad, coded by him-self :)
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-6">
-							Portfolio conçu et hébergé par <b>Richard Haddad</b> © 2015 - 2016<br/>
+							Portfolio conçu et hébergé par <b>Richard Haddad</b> © 2015 - 2016
 							<br/>
-							<a class='lien github' href='https://github.com/Chnapy' target='_blank' data-toggle="tooltip" data-placement="bottom" title="Accéder à ma page GitHub"><img src='img/GitHub-Mark-Light-32px.png' alt='Acces_GitHub'/></a>
-							<a class='lien linkedin' href='https://www.linkedin.com/in/richard-haddad' target='_blank' data-toggle="tooltip" data-placement="bottom" title="Accéder à ma page LinkedIn"><img src='img/In-White-28px-R.png' alt='Acces_LinkedIn'/></a>
+							<br/>
+							<span class="balise">
+								<a class="lien cv" href="https://www.dropbox.com/s/pblzhlzxqwz0isb/CV.pdf?dl=0" target='_blank' data-toggle="tooltip" data-placement="bottom" title="Accéder à mon CV"></a>
+								<a class='lien github' href='https://github.com/Chnapy' target='_blank' data-toggle="tooltip" data-placement="bottom" title="Accéder à ma page GitHub"><img src='img/GitHub-Mark-Light-32px.png' alt='Acces_GitHub'/></a>
+								<a class='lien linkedin' href='https://www.linkedin.com/in/richard-haddad' target='_blank' data-toggle="tooltip" data-placement="bottom" title="Accéder à ma page LinkedIn"><img src='img/In-White-28px-R.png' alt='Acces_LinkedIn'/></a>
+							</span>
 						</div>
 						<div class="col-lg-6">
 							Ce site utilise les technologies suivantes :<br/>
@@ -537,7 +790,7 @@ Portfolio of Richard Haddad, coded by him-self :)
 									<b>PHP</b> (pour la partie contact)
 								</li>
 							</ol>
-							Ainsi que les librairies <b>JQuery</b> et <b>Bootstrap</b>
+							Ainsi que les librairies <b>jQuery</b> et <b>Bootstrap</b>
 						</div>
 					</div>
 					<div class="row">

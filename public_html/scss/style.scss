@@ -56,7 +56,7 @@ body {
 }
 
 .a {
-	color: inherit !important;
+	/*color: inherit;*/
 	background-image: linear-gradient(to right, $color_a, $color_a);
 	background-position: 0 100%;
 	background-size: 100% 2px;
@@ -67,6 +67,10 @@ body {
 	&:hover {
 		background-size: 100% 100%;
 	}
+}
+
+a, a:hover, a:focus, a:active, a.active {
+    color: #62d2ff;
 }
 
 .diagram {
@@ -123,6 +127,25 @@ body {
 	-o-#{$key}: $value;
 	-ms-#{$key}: $value;
 	#{$key}: $value;
+}
+
+.cv {
+	display: inline-block;
+    width: 32px;
+    height: 32px;
+    vertical-align: top;
+    border: 4px solid white;
+	
+	&:after {
+		content: 'CV';
+		display: inline-block;
+		color: white;
+		width: 32px;
+		line-height: 32px;
+		text-align: center;
+		margin-left: -4px;
+		margin-top: -4px;
+	}
 }
 
 header {
@@ -185,11 +208,15 @@ header {
 					margin-top: 20px;
 				}
 
+				.etat {
+					display: block;
+				}
+
 				.todown {
 					position: absolute;
 					display: inline-block;
 					bottom: 0;
-					transform: translateX(-50%);
+					@include wout-prefix(transform, translateX(-50%));
 					left: 50%;
 					color: white;
 					font-size: 2em;
@@ -227,19 +254,19 @@ header {
 
 	@keyframes blur {
 		0% {
-			filter: blur(10px);
+			@include wout-prefix(filter, blur(10px));
 		}
 		100% {
-			filter: blur(0px);
+			@include wout-prefix(filter, blur(0px));
 		}
 	}
 
 	@keyframes todown {
 		0% {
-			transform: translateY(-5px);
+			@include wout-prefix(transform, translateY(-5px));
 		}
 		100% {
-			transform: translateY(10px);
+			@include wout-prefix(transform, translateY(10px));
 		}
 	}
 
@@ -289,9 +316,13 @@ header {
 				text-align: left;
 				/*width: 100%;*/
 				margin-left: 400px;
-				margin-right: 150px;
+				margin-right: 192px;
 				@include wout-prefix(animation-name, opa);
 				@include wout-prefix(animation-duration, 0.4s);
+
+				.etat {
+					margin-left: 15px;
+				}
 
 				.noms {
 					padding-bottom: 5px;
@@ -317,7 +348,7 @@ header {
 					position: absolute;
 					right: 0;
 					top: 0;
-					width: 150px;
+					width: 192px;
 					text-align: right;
 					padding-top: 2px;
 				}
@@ -427,23 +458,27 @@ header {
 	.name {
 		text-transform: none !important;
 		font-weight: lighter !important;
-
-		&::before, &::after {
-			display: inline-block;
-			@include wout-prefix(animation-duration, 4s);
-			@include wout-prefix(animation-timing-function, ease-out);
-			@include wout-prefix(animation-fill-mode, forwards);
-		}
-
-		&::before {
-			content: '<';
-			@include wout-prefix(animation-name, name_anim_left);
-		}
-		&::after {
-			content: '/>';
-			@include wout-prefix(animation-name, name_anim_right);
-		}
 	}
+}
+
+.balise {
+
+	&::before, &::after {
+		display: inline-block;
+		@include wout-prefix(animation-duration, 4s);
+		@include wout-prefix(animation-timing-function, ease-out);
+		@include wout-prefix(animation-fill-mode, forwards);
+	}
+
+	&::before {
+		content: '<';
+		@include wout-prefix(animation-name, name_anim_left);
+	}
+	&::after {
+		content: '/>';
+		@include wout-prefix(animation-name, name_anim_right);
+	}
+
 }
 
 .lien {
@@ -452,8 +487,8 @@ header {
 	margin-right: 5px;
 	transition: 0.4s;
 
-	&:hover {
-		transform: scale(1.1);
+	&:hover, &:hover:after, &:hover:before {
+		@include wout-prefix(transform, scale(1.1));
 	}
 
 	img {
@@ -612,13 +647,20 @@ header {
 
 }
 
-.image-large {
+.image-large, .carousel-inner {
 	cursor: pointer;
 	transition: 0.4s;
 
 	&:hover {
-		transform: scale(1.025);
+		@include wout-prefix(transform, scale(1.025));
 	}
+}
+
+.jumbotron>.jumbotron-photo video {
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
 }
 
 #imagemodal {
