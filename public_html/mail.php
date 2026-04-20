@@ -1,6 +1,6 @@
 <?php
 
-define('ADRESSE_MAIL', 'richardhaddad@hotmail.fr');
+define('ADRESSE_MAIL', 'removed@main.fr');
 
 $echo_value = sendMail();
 
